@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/bgImg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
+    <script src="https://kit.fontawesome.com/67e8923498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <a href="https://github.com/maxim-milet-webdeveloper/weather">Github Code</a>
+    <main>
+        <div class="container">
+            <div class="main-wrapper">
+                <h1>What Is the weather?</h1>
+                <div class="input-wrapper">
+                    <input type="search" id="address-input" placeholder="What Is Your Location?" />
+                </div>
+                <div class="weather-results">
+                    <div class="weather">
+                        <div class="main">
+                            <p id="weather-main"></p>
+                        </div>
+                        <div class="desc">
+                            <p id="weather-desc"></p>
+                        </div>
+                    </div>
+                    <div class="temp-icon">
+                        <div id="icon">
+                            <p>Icon: </p>
+                            <img src="" alt="weather-icon">
+                        </div>
+                        <div id="temp">
+                            <p id="celc"></p>
+                            <p id="fah"></p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <div id="wind-icon"><p>Wind</p><i class="fas fa-wind"></i></div>
+                        <div id="wind-data">
+                            <p id="deg"></p>
+                            <p id="speed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/location.js"></script>
+</body>
+</html>

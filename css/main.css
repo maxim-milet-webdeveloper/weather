@@ -1,0 +1,109 @@
+.ap-footer {
+    display: none;
+}
+
+
+.leaflet-bottom  {
+    display: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none !important;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body > main > div > div > div > span > button.ap-input-icon.ap-icon-clear {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+main h1 {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.377);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.input-wrapper {
+    max-width: 450px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.weather-results {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform .2s ease-in, opacity .2s ease-in;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.377);
+}
+
+.weather-results.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.weather-results > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-results .temp-icon #icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-results .temp-icon #temp {
+    display: flex;
+}
+
+.weather-results .temp-icon #temp #celc {
+    margin-right: 2rem;
+}
+
+.weather-results .wind > div {
+    display: flex;
+    align-items: center;
+}
+
+.weather-results .wind #wind-data  #speed,
+.weather-results .wind #wind-icon p  {
+    margin-right: 2rem;
+}
+
+a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(216, 216, 216);
+}
+
+a:hover {
+    color: white;
+}
