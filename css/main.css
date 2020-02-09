@@ -92,7 +92,7 @@ main h1 {
     align-items: center;
 }
 
-.weather-results .wind #wind-data  #speed,
+.weather-results .wind #wind-data  #deg,
 .weather-results .wind #wind-icon p  {
     margin-right: 2rem;
 }
